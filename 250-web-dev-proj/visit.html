@@ -1,0 +1,281 @@
+<!DOCTYPE html>     <!-- Tells the browser this is HTML 5 -->
+<html lang="en">    <!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+
+    <!-- META tags help search engines identify your content more easily -->
+    <meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="author" content="Ricky Ma">
+    <meta name="keywords" content="The Butterwood Bake Consortium">
+    <meta name="description" content="Butterwood Bake Consortium Home Page">
+
+    <!-- The title will appear in the menu bar of the browser -->
+    <title>Butterwood Bake Consortium</title>
+    
+    <!-- External Links to CSS files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="screen and (max-width: 480px)" type="text/css" href="css/stylesmobile.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+    <!-- External Links to JS files -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    <script type="text/javascript">
+
+    $(function() {
+        $("#container-graph").highcharts({
+            title: {
+                text: 'Popular Times Wed-Fri 12PM-11PM'
+            },
+
+            subtitle: {
+                text: '(avg per day)'
+            },
+
+            xAxis: {
+                title: {
+                    text: "Time of day"
+                },
+                categories: ['12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM', '7PM', '8PM', '9PM', '10PM', '11PM']
+            },
+
+
+            yAxis: {
+                title: {
+                    text: 'Number of Visitors'
+                }
+            },
+
+            tooltip: {
+                valueSuffix: " people"
+            },
+
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle'
+            },
+
+            series: [{
+                name: "People Visiting",
+                data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32, 22]
+            }], 
+        });
+    });
+    </script>
+
+    <script type="text/javascript">
+
+    $(function() {
+        $("#container-graph2").highcharts({
+            title: {
+                text: 'Popular Times Sat and Sun 10AM-9PM'
+            },
+
+            subtitle: {
+                text: '(avg per day)'
+            },
+
+            xAxis: {
+                title: {
+                    text: "Time of day"
+                },
+                categories: ['10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM', '7PM', '8PM', '9PM']
+            },
+
+
+            yAxis: {
+                title: {
+                    text: 'Number of Visitors'
+                }
+            },
+
+            tooltip: {
+                valueSuffix: " people"
+            },
+
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle'
+            },
+
+            series: [{
+                name: "People Visiting",
+                data: [30, 33, 50, 48, 25, 28, 27, 24, 46, 66, 73, 70]
+            }], 
+        });
+    });
+    </script>
+
+
+
+    
+</head>
+    
+<body>
+        
+<!-- The BODY is where the main content goes -->
+<div id="top_row">
+    
+    <header> <!-- Header is new tag in HTML 5 -->
+        <img src="images/logo.webp" width=20% height=20%>
+    </header>
+    
+    <nav> <!-- Nav is new tag in HTML 5 -->
+        <a href="index.html">Home</a> <!-- Navigation to other pages in our website - these are relative links --> 
+        <a href="cake.html">Cakes</a> 
+        <a href="pies.html">Whole Pies</a>
+        <a href="events.html">Events</a><br/>
+        <a href="contact.html">Contact Us</a>
+        <a class="selected" href="visit.html">Visit Us</a>
+        <a href="online.html">Order Online</a>
+        <!-- This anchor takes us to another page within the site; hence it is called a relative link. -->  
+    </nav>
+</div>
+
+<div class="rowgraph">
+    <div class="columngraph">
+    <p>Please use this map to find us!</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.74395131585!2d-79.95601068504223!3d40.48092925965719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2f8094aa81b%3A0x8460b792bcc058aa!2s5222+Butler+St%2C+Pittsburgh%2C+PA+15201!5e0!3m2!1sen!2sus!4v1553649515866" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="columngraph">
+        <p>Find our contact information below!</p>
+        <table border="4">
+          <tr>
+              <td colspan="2"><img src="images/image.png"></td>
+          </tr>
+          <tr>
+            <th colspan="2"><a href="index.html">Our Website</a></th>
+          </tr>
+          <tr>
+              <th>Address</th>
+              <td>5222 Butler St Pittsburgh, PA 15201</td> 
+          </tr>
+          <tr>
+              <th>Email Address</th>
+              <td><a href="mailto:info@thebutterwood.com">info@thebutterwood.com</a></td> 
+          </tr>
+          <tr>
+              <th>Phone Number</th>
+              <td>412-781-0218</td> 
+          </tr>
+          <tr>
+            <th>Hours of Operation</th>
+            <td>Wed–Fri 12PM - 11PM Sat 10AM - 11PM Sun 10AM - 9PM</td>
+        </tr>
+      </table> 
+      <div id="description"></div>
+    </div>
+
+</div>
+<div class="rowgraph">
+    <p>Check below for popular visiting times!</p>
+    <div class="columngraph">
+      <div id="container-graph"></div>
+    </div>
+    <div class="columngraph">
+        <div id="container-graph2"></div>
+    </div>
+</div>
+    
+<div class="rowgraph">
+    <p>Find out more about us!</p>
+    <div class="column">
+        <a href="https://archive.triblive.com/news/butterwood-bake-consortium-is-a-real-treat/" target="_blank"><img src="images/triblivelogo.png"></a>
+    </div>
+    <div class="column">
+        <a href="https://thepittsburgh100.com/entertainment/food/2018/09/25/pittsburgh-roast-butterwood-bake-consortium" target="_blank"><img src="images/pitt100.png"></a>
+    </div>
+    <div class="column">
+        <a href="https://www.discovertheburgh.com/bakeries-in-pittsburgh/" target="_blank"><img src="images/discovertheburgh.png"></a>
+    </div>
+</div>
+<div class="rowgraph">
+    <div class="column">
+        <a href="https://www.pghcitypaper.com/pittsburgh/at-lawrencevilles-butterwood-bake-consortium-the-focus-is-on-dessert/Content?oid=1879796" target="_blank"><img src="images/pghpaper.png"></a>
+    </div>
+    <div class="column">
+        <a href="https://www.yelp.com/biz/the-butterwood-bake-consortium-pittsburgh" target="_blank"><img src="images/yelp.png"></a>
+    </div>
+</div>
+</div>
+
+    <footer>
+        <div class="column">
+            <h2>Visit us on social media!</h2>
+            &copy; Butterwood Bake Consortium<br/>
+            <a href="mailto:info@thebutterwood.com"><img src="images/email.png"></a>
+            <!-- Anchor tags can take you to pages outside the site, within the site or within the page. -->
+            <a href="https://www.facebook.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/facebook.png"></a>
+            <a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img src="images/instagram.png"></a>
+            <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+        </div>  
+        <div class="column">
+            <h2>Address</h2>
+            <p>5222 Butler St</p>
+
+<p>Pittsburgh, PA</p>
+
+<p>15201</p>
+        </div>
+        <div class="column">
+            <h2>Contact</h2>
+            <p>Phone: 412-781-0218</p>
+            <p>Email:</p>
+            <a href="mailto:info@thebutterwood.com"><p>info@thebutterwood.com</p></a>
+        </div>
+        <div class="column">
+            <h2>Hours</h2>
+            <p>Wed–Fri 12PM - 11PM</p>
+
+<p>Sat 10AM - 11PM</p>
+
+<p>Sun 10AM - 9PM</p>
+        </div>
+    </footer> 
+
+
+    <script>
+        //code from w3 schools
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1} 
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block"; 
+          dots[slideIndex-1].className += " active";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

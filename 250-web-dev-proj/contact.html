@@ -1,0 +1,112 @@
+<!DOCTYPE html>     <!-- Tells the browser this is HTML 5 -->
+<html lang="en">    <!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+
+    <!-- META tags help search engines identify your content more easily -->
+    <meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="author" content="Ricky Ma">
+    <meta name="keywords" content="The Butterwood Bake Consortium">
+    <meta name="description" content="Butterwood Bake Consortium Home Page">
+
+    <!-- The title will appear in the menu bar of the browser -->
+    <title>Butterwood Bake Consortium</title>
+    
+    <!-- External Links to CSS files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="screen and (max-width: 480px)" type="text/css" href="css/stylesmobile.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+    <!-- External Links to JS files -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+
+    
+</head>
+    
+<body>
+        
+<!-- The BODY is where the main content goes -->
+<div id="top_row">
+    
+    <header> <!-- Header is new tag in HTML 5 -->
+        <img src="images/logo.webp" width=20% height=20%>
+    </header>
+    
+    <nav> <!-- Nav is new tag in HTML 5 -->
+        <a href="index.html">Home</a> <!-- Navigation to other pages in our website - these are relative links --> 
+        <a href="cake.html">Cakes</a> 
+        <a href="pies.html">Whole Pies</a>
+        <a href="events.html">Events</a><br/>
+        <a class="selected" href="contact.html">Contact Us</a>
+        <a href="visit.html">Visit Us</a>
+        <a href="online.html">Order Online</a>
+        <!-- This anchor takes us to another page within the site; hence it is called a relative link. -->  
+    </nav>
+</div>
+    
+
+
+    <div>
+      <form onsubmit="return validate()" action="mailto:infoneeded@butterwoodBC.com" method="post">
+      <span> * = required</span>
+      <fieldset>
+          <label for="uname">Name:</label><span> *</span><br/>
+          <input type="text" id="uname" name="uname" Placeholder="Your Name" size="20" maxlength ="250" required><br/><br/>
+          <label for="zip">Zip Code:</label> <br>
+          <input type="text" inputmode="numeric" id="zip" name="zip" Placeholder="ex. 15213" size="20" minlength="5" maxlength="5"><br/><br/>
+          <label for="email">Please provide your email address:</label><span> *</span><br/>
+          <input type="email" id="email" name="email" value="" Placeholder = "abc@defg.com" required ><br/><br/>
+          <label for="message">Inquiry:</label><span> *</span><br/>
+          <textarea id="message" name="message" Placeholder="Type your Message" rows="10" cols="50" maxlength="1000"> </textarea><br/><br/>
+          <label>Please indicate if you would like to subscribe to our mailing list:</label><br/>
+          <input type="checkbox" id="signup" name="signup" value="yes">Yes, please update me!<br/><br/>
+
+          <input id="submit" type ="image" src="images/submit.png" alt="Submit" name= "btnimage" value ="Submit">
+      </fieldset>
+      
+      </form>
+        
+    </div> <!-- Close content -->
+
+     
+
+    <footer>
+        <div class="column">
+            <h2>Visit us on social media!</h2>
+            &copy; Butterwood Bake Consortium<br/>
+            <a href="mailto:info@thebutterwood.com"><img src="images/email.png"></a>
+            <!-- Anchor tags can take you to pages outside the site, within the site or within the page. -->
+            <a href="https://www.facebook.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/facebook.png"></a>
+            <a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img src="images/instagram.png"></a>
+            <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+        </div>  
+        <div class="column">
+            <h2>Address</h2>
+            <p>5222 Butler St</p>
+
+<p>Pittsburgh, PA</p>
+
+<p>15201</p>
+        </div>
+        <div class="column">
+            <h2>Contact</h2>
+            <p>Phone: 412-781-0218</p>
+            <p>Email:</p>
+            <a href="mailto:info@thebutterwood.com"><p>info@thebutterwood.com</p></a>
+        </div>
+        <div class="column">
+            <h2>Hours</h2>
+            <p>Wed–Fri 12PM - 11PM</p>
+
+<p>Sat 10AM - 11PM</p>
+
+<p>Sun 10AM - 9PM</p>
+        </div>
+    </footer> 
+
+</body>
+
+</html>

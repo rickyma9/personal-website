@@ -1,0 +1,270 @@
+<!DOCTYPE html>     <!-- Tells the browser this is HTML 5 -->
+<html lang="en">    <!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+
+    <!-- META tags help search engines identify your content more easily -->
+    <meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="author" content="Ricky Ma">
+    <meta name="keywords" content="The Butterwood Bake Consortium">
+    <meta name="description" content="Butterwood Bake Consortium Home Page">
+
+    <!-- The title will appear in the menu bar of the browser -->
+    <title>Butterwood Bake Consortium</title>
+    
+    <!-- External Links to CSS files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="screen and (max-width: 480px)" type="text/css" href="css/stylesmobile.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+    <!-- External Links to JS files -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+
+	
+</head>
+    
+<body>
+        
+<!-- The BODY is where the main content goes -->
+<div id="top_row">
+    
+    <header> <!-- Header is new tag in HTML 5 -->
+        <img src="images/logo.webp" width=20% height=20%>
+    </header>
+    
+    <nav> <!-- Nav is new tag in HTML 5 -->
+        <a href="index.html">Home</a> <!-- Navigation to other pages in our website - these are relative links --> 
+        <a class="selected" href="cake.html">Cakes</a> 
+        <a href="pies.html">Whole Pies</a>
+        <a href="events.html">Events</a><br/>
+        <a href="contact.html">Contact Us</a>
+        <a href="visit.html">Visit Us</a>
+        <a href="online.html">Order Online</a>
+        <!-- This anchor takes us to another page within the site; hence it is called a relative link. -->  
+    </nav>
+</div>
+    
+<div class="container">
+
+    <!-- from w3 schools with minor edits -->
+    <div class="slideshow-container" style="transform:translate(25%, 5%)">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/cake1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="images/cake2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="images/cake3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/cake4.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+            <div class="pricing"> <p>Sizes are:  6"  ($35+)  </p>
+             <p>8"  ($45+)</p>
+              <p>9"  ($55+) </p>
+​
+ <p>*Prices vary depending on flavor and decor.</p>
+
+<p> Please email us to discuss wedding cakes and tiered cake sizes and pricing.
+Tastings: Select 3-5 flavors. We charge per slice.
+Tiered/wedding cakes start at $3.25 per serving.
+Delivery available within the city of Pittsburgh: Fee $75
+Please visit us on Instagram to view examples of our cakes.</p>
+<p> Due to the high volume of wedding inquiries, it's taking us a bit longer to
+respond via email. Thank you in advance for your patience!</p>
+        </div>
+
+    </div>
+
+    <!-- end from w3 school -->
+    
+    <div class="information">
+        <div class="row">
+            <div class="column">
+                <h2>Cake Base</h2>
+                <ol>
+                    <li>Olive Oil</li>
+                    <li>Vegan</li>
+                </ol>
+            </div>
+            <div class="column">
+                <h2>Cake Flavors</h2>
+                <ul>
+                <li>Chocolate</li> 
+                <li>Chocolate Sweet Potato</li>  
+                <li>Chocolate Beet</li> 
+                <li>Chocolate Cinnamon</li>  
+                <li>Espresso</li> 
+                <li>Vanilla</li> 
+                <li>Olive Oil</li> 
+                <li>Lavender</li> 
+                <li>Lemon</li> 
+                <li>Rose</li> 
+                <li>Poppy Seed</li>  
+                <li>Black Sesame</li> 
+                <li>Clementine</li> 
+                <li>Blood Orange</li>  
+                <li>Pumpkin</li> 
+                <li>Pear Spice</li>  
+                <li>Apple Spice</li>  
+                <li>Banana Spice</li>  
+                <li>Sweet Potato Spice</li> 
+                <li>Cinnamon</li> 
+                <li>Butternut Squash</li>  
+                <li>Matcha Green Tea</li>  
+                <li>Coconut</li> 
+                <li>Carrot Spice</li> 
+                <li>Turmeric</li> 
+                <li>Pecan</li> 
+                <li>Almond</li> 
+                <li>Rosemary</li> 
+                <li>Fig (seasonal)</li> 
+                <li>Peanut Butter</li>  
+                <li>Berry</li> 
+                <li>Berry Basil</li> 
+                <li>Elderflower</li> 
+                <li>Creme De Violette</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Buttercream</h2>
+                <ul>
+                <li>Vanilla</li>   
+                <li>Vanilla Mascarpone</li>   
+                <li>Chocolate</li>   
+                <li>Chocolate Cinnamon</li>   
+                <li>Mocha</li>   
+                <li>Espresso</li>   
+                <li>Cinnamon Mocha</li>   
+                <li>Cinnamon Espresso</li>   
+                <li>Tahini</li>   
+                <li>Peanut Butter</li>   
+                <li>Pistachio</li>   
+                <li>Salted Almond</li>   
+                <li>Cashew</li>   
+                <li>Black Sesame</li>   
+                <li>Matcha</li>   
+                <li>Fresh Mint</li>   
+                <li>Berry (Assorted)</li>   
+                <li>Basil</li>   
+                <li>Maple</li>   
+                <li>Honey</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="additions"> <p>Jazzy Additions...
+
+Additional fees apply to the following.
+
+Fees vary based on specifics of your order.</p>
+
+​
+<p>
+Lemon Curd, Mascarpone, Ricotta, Chocolate Ganache, Caramel, Caramelized Pear, Fresh Berries, Fruit Compote, Fresh Flowers,
+
+Gold Leaf (starts at +$15, it's gold after all!)</p>
+        </div>
+
+    </div>
+
+    
+</div>  
+
+<footer>
+        <div class="column">
+            <h2>Visit us on social media!</h2>
+            &copy; Butterwood Bake Consortium<br/>
+            <a href="mailto:info@thebutterwood.com"><img src="images/email.png"></a>
+            <!-- Anchor tags can take you to pages outside the site, within the site or within the page. -->
+            <a href="https://www.facebook.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/facebook.png"></a>
+            <a href="https://www.instagram.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/instagram.png"></a>
+            <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+        </div>  
+        <div class="column">
+            <h2>Address</h2>
+            <p>5222 Butler St</p>
+
+<p>Pittsburgh, PA</p>
+
+<p>15201</p>
+        </div>
+        <div class="column">
+            <h2>Contact</h2>
+            <p>Phone: 412-781-0218</p>
+            <p>Email:</p>
+            <a href="mailto:info@thebutterwood.com"><p>info@thebutterwood.com</p></a>
+        </div>
+        <div class="column">
+            <h2>Hours</h2>
+            <p>Wed–Fri 12PM - 11PM</p>
+
+<p>Sat 10AM - 11PM</p>
+
+<p>Sun 10AM - 9PM</p>
+        </div>
+    </footer> 
+
+
+
+	<script>
+        //code from w3 schools
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
+
+		}
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>     <!-- Tells the browser this is HTML 5 -->
+<html lang="en">    <!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+
+    <!-- META tags help search engines identify your content more easily -->
+    <meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="author" content="Ricky Ma">
+    <meta name="keywords" content="The Butterwood Bake Consortium">
+    <meta name="description" content="Butterwood Bake Consortium Home Page">
+
+    <!-- The title will appear in the menu bar of the browser -->
+    <title>Butterwood Bake Consortium</title>
+    
+    <!-- External Links to CSS files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/homestyles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+    <!-- External Links to JS files -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+
+    
+</head>
+    
+<body>
+        
+<!-- The BODY is where the main content goes -->
+    
+<div class="container">
+    
+    <header> <!-- Header is new tag in HTML 5 -->
+        <img src="images/logo.webp">
+        <p>We're a dessert cafe located in Lawrenceville, 
+        featuring cake and pie by the slice, custom whole cakes,
+        as well as local <a href="https://klvncoffee.com/">KLVN coffee and espresso!</a></p>
+        <br/>
+        <p>Opened in October 2015, Butterwood Bake Consortium is a dessert cafe located in the Lawrenceville neighbourhood of Pittsburgh, Pennsylvania. The bakery features cake and pie by the slice, custom whole cakes, as well as local KLVN coffee and espresso! We bake with organic Daisy Flour, Wholesome Sweeteners Organic Evaporated Cane Juice, and local, organic eggs.</p>
+    </header>
+    
+    <nav> <!-- Nav is new tag in HTML 5 -->
+        <a class="selected" href="index.html">Home</a><br/> <!-- Navigation to other pages in our website - these are relative links --> 
+        <a href="cake.html">Cakes</a><br/> 
+        <a href="pies.html">Whole Pies</a><br/>
+        <a href="events.html">Events</a><br/>
+        <a href="contact.html">Contact Us</a><br/>
+        <a href="visit.html">Visit Us</a><br/>
+        <a href="online.html">Order Online</a>
+        <!-- This anchor takes us to another page within the site; hence it is called a relative link. -->  
+    </nav>
+
+</div>
+
+<footer>
+        <div class="column">
+            <h2>Visit us on social media!</h2>
+            &copy; Butterwood Bake Consortium<br/>
+            <a href="mailto:info@thebutterwood.com"><img src="images/email.png"></a>
+            <!-- Anchor tags can take you to pages outside the site, within the site or within the page. -->
+            <a href="https://www.facebook.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/facebook.png"></a>
+            <a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img src="images/instagram.png"></a>
+            <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+        </div>  
+        <div class="column">
+            <h2>Address</h2>
+            <p>5222 Butler St</p>
+
+<p>Pittsburgh, PA</p>
+
+<p>15201</p>
+        </div>
+        <div class="column">
+            <h2>Contact</h2>
+            <p>Phone: 412-781-0218</p>
+            <p>Email:</p>
+            <a href="mailto:info@thebutterwood.com"><p>info@thebutterwood.com</p></a>
+        </div>
+        <div class="column">
+            <h2>Hours</h2>
+            <p>Wed–Fri 12PM - 11PM</p>
+
+<p>Sat 10AM - 11PM</p>
+
+<p>Sun 10AM - 9PM</p>
+        </div>
+    </footer> 
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+html {
+    background-color: rgba(252, 242, 223, 0.5);
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: Roboto; /* Set all font in the page to Helvetica with font formating */
+    font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+    line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. It is often set in a unitless value (e.g. line-height: 1.4; ) */
+    color: #000000; /* Hex Color Black */
+}
+
+a { 
+    color: #504D4D;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+header {
+    flex:30%;
+    text-align: center;
+    transform: translate(35%, 10%);
+    float: left;
+}
+
+header a {
+    color: #687789;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+header img {
+    width: 55%;
+}
+
+header a:hover {
+    color: rgb(189, 180, 178);
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+    flex: 50%;
+    text-align: center;
+    transform: translate(10%, 35%);
+    font-size: 2em;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF; 
+}
+
+footer {
+    clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
+    margin: 0;
+    padding: .5em;
+    color: #333333;
+    font-variant: small-caps; 
+    font-size: .813em;
+    text-align: center;
+    border-top: 1px dotted #cccccc;
+    transform: translate(5%, 80%);
+    display: flex;
+    width: 90%;
+    
+    /* background-color: #ddd; */
+}
+
+footer img {
+    width: 16%;
+}
+
+footer .column {
+    flex: 25%;
+    transform: translate(0%, 0);
+    padding: 3em;
+    font-size: 1.5em;
+}
+
+footer .column p {
+    color: #56595D;
+}
+
+footer p {
+    margin:0;
+}
+
+footer h2 {
+    margin-top: -1.5em;
+}
+
+#container {
+    column-count: 2;
+}
+

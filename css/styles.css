@@ -1,0 +1,269 @@
+/* ------------------------------------------------------
+  Stylesheet Guide
+  ------------------------------------------------------
+
+    1. Imports from Google Fonts
+    2. General 
+        2.a. Footer 
+    3. Nav bar 
+    4. schedule.html 
+    	4.a. Table
+    		4.a.i. Heads of the table
+    		4.a.ii. Data elements
+    	4.b. Main content
+    5. contact.html
+    	5.a. Form
+    		5.a.i. Interacting with the form
+    		5.a.ii. Form position adjustments
+    	5.b. Main content
+    6. index.html
+    	6.a. Main content
+    7. Nav bar: other styles
+    8. experience.html
+
+------------------------------------------------------ */
+
+
+/* 1. Imported fonts from Google Fonts API. */
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+/* 2. General styles, applicable to the body of of all pages. */
+	body {
+		font-family:  'Nunito', sans-serif;
+		font-size: 90%;
+		color: #666;
+		background-color: #f8f8f8;}
+
+	#page {
+		max-width: 940px;
+		min-width: 720px;
+		margin: 10px auto 10px auto;
+		
+		border: 4px  #000;
+		background-color: #ffffff;
+		vertical-align: baseline;
+	}
+/* 3. Styles for the nav bar: styling the buttons. */
+
+	li {
+		list-style-image: url("images/icon-plus.png");
+		line-height: 1.6em;}
+
+/* 4. Styles for the schedule.html page. */
+
+/* 4.a. Styles for the table in the page (also used in the experience.html page). */
+	table {
+		border-spacing: 0px;}
+	th, td {
+		padding: 5px 30px 5px 10px;
+		border-spacing: 0px;
+		font-size: 90%;
+		margin: 0px;}
+	th, td {
+		text-align: left;
+		background-color: #D5D0C1;
+		border-top: 1px solid #f1f8fe;
+		border-bottom: 1px solid #cbd2d8;
+		border-right: 1px solid #cbd2d8;}
+
+/* 4.a.i. Styles for the header elements of the table. */
+	tr.head th {
+		color: #fff;
+		background-color: #888479;
+		border-bottom: 2px solid #547ca0;
+		border-right: 1px solid #749abe;
+		border-top: 1px solid #90b4d6;
+		text-align: center;
+		text-shadow: -1px -1px 1px #666666;
+		letter-spacing: 0.15em;}
+
+/*4.a.ii. Styles for the data elements in the table. */
+	td {
+		text-shadow: 1px 1px 1px #ffffff;}
+	tr.even td, tr.even th {
+		background-color: #F0EADA;}
+	tr.head th:first-child {
+		/* WebKit is a browser engine used in Apple's Safari browser, Amazon 
+		  Kindle e-book reader, BlackBerry Browser in OS 6 and above.
+
+		  Not all CSS3 properties work well in all browsers. In a way to ensure that web pages
+		  display as expected in their browsers, vendors like Mozilla and Webkit developed their
+		  own browser-compatible properties. With CSS3, many compatibility issues are now resolved.
+		  However, it is not unusual to still see these properties used in stylesheets.
+
+		  */
+
+		/* Webkit property*/
+		-webkit-border-top-left-radius: 5px;
+
+		/* Mozilla property*/
+		-moz-border-radius-topleft: 5px;
+
+		/* CSS3 property*/
+		border-top-left-radius: 5px;
+
+		/* More on border-radius property: https://www.the-art-of-web.com/css/border-radius/ */
+	}
+	tr.head th:last-child {
+		-webkit-border-top-right-radius: 5px;
+		-moz-border-radius-topright: 5px;
+		border-top-right-radius: 5px;}
+
+	/* 4.b. Styles for the main content of the page. */
+	.center-mid-2{
+		width: 940px;
+		background-color: #efeae6;
+		padding-bottom: 15px;
+		padding-top: 5px;
+		}
+
+	.center-2{
+		width: 940px;
+		margin: auto;
+		padding-bottom: 15px;
+		padding-top: 5px;
+		}
+
+	.center-2>h1, .center-2>p{
+		text-align: center;
+	}
+
+
+/* 5. Styles for the contact.html page. */
+
+/* 5.a. Styles for the form in the page. */
+	fieldset {
+		display: inline-block;
+		text-align: center;	
+		margin: auto;
+		width: 310px;
+		margin-top: 20px;
+		border: 1px solid #d6d6d6;
+		background-color: #EAFCC4;
+		line-height: 1.6em;}
+
+/* 5.a.i. Styles for interacting with the form. */
+	legend {
+		font-style: italic;
+		color: #666666;}
+	input[type="text"] {
+		width: 120px;
+		border: 1px solid #d6d6d6;
+		padding: 2px;
+		outline: none;}
+	input[type="text"]:focus,
+	input[type="text"]:hover {
+		background-color: #d0e2f0;
+		border: 1px solid #999999;}
+	input[type="submit"] {
+		border: 1px solid #006633;
+		background-color: #009966;
+		color: #ffffff;
+		border-radius: 5px;
+		padding: 5px;
+		margin-top: 10px;}
+	input[type="submit"]:hover {
+		border: 1px solid #006633;
+		background-color: #00CC33;
+		color: #ffffff;
+		cursor: pointer;}
+
+/* 5.a.ii. Styles for the adjusting the position of the form elements. */
+	.title {
+		float: left;
+		width: 160px;
+		clear: left;}
+	.submit {
+		width: 310px;
+		text-align: right;}
+
+/* 5.b. Styles for the main content of the page. */
+	.center-mid-3{
+		display: block
+		text-align: center;
+		width: 940px;
+		background-color: #CFE99A;
+		padding-bottom: 15px;
+		padding-top: 5px;
+		}
+
+	.center-3{
+		width: 300px;
+		margin: 0 0;
+		}
+
+/* 6. Styles for the index.html page. */
+
+/* 6.a. Styles for the main content of the page. */
+	.center-mid-1{
+		width: 940px;
+		background-color: #e0e9f0;
+		padding-bottom: 15px;
+		padding-top: 5px;
+		}
+
+	.img-1{
+		margin: auto;
+		width: 100%;
+	}
+	.img-2{
+		margin: auto;
+		width: 30%;
+		padding-left: 10px;
+	}
+
+	.center-text {
+		text-align: center;
+	}
+	
+	h1.center-text {
+		font-family: 'Merriweather', serif;
+		font-size: 550%;
+	}
+	}
+	
+/* 7. Other hav bar styles. */
+	.menu-holder {
+	    float: right;
+	    max-width: 80%;
+	    position: fixed;
+	    text-align: center;
+	    height: 100%;
+	    background-color: #ffffff;
+	    right: -100%;
+	    top: 0;
+	    transition: right .3s ease;
+	    width: 100%;
+	    overflow: auto;
+	    max-width: 100%;
+	    z-index: 99;
+	}     
+
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	ul li {
+		display: inline;
+		padding: 10px;
+		float: right;
+	}
+
+	ul li a, ul a :hover, ul li a:focus, ul li a:active {
+	    border: none;
+	    text-decoration: none;
+	    color: inherit;
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	/* 8. Styles for experience.html */
+
+	dl {
+		margin: 20px;
+	}

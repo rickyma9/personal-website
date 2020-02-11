@@ -1,0 +1,30 @@
+
+
+@media screen and (max-width: 600px) {
+
+    html {
+        background-color: rgba(202, 192, 173, 0.5);
+    }
+
+    .columnw img {
+        display: none;
+    }
+
+    .columnw {
+        float: left;
+        width: 100%;
+        transform: translate(0%, 0);
+        padding: 1em;
+        font-size: 1.5em;
+    }
+
+    nav {
+        font-size: .5em;
+    }
+
+    header img {
+        width: 50%;
+        height: 50%;
+    }
+
+} 
